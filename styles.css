@@ -1,0 +1,721 @@
+/* Welcome page  */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("https://i.ibb.co/SPZD6fx/banner.jpg") no-repeat center center; 
+    background-size: cover; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    background-color: #282a29;
+    padding: 10px 30px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px; 
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b64d14;
+}
+
+hr {
+    border: 1px solid #9387ea;
+    margin: 10px 0;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    align-items: center;
+    justify-content: space-between;
+    padding: 109px 40px; /* Balanced padding */
+    margin: 0 auto; /* Center the content */
+    gap: 20px; /* Adds space between elements */
+    background: url("https://i.ibb.co/SPZD6fx/banner.jpg") no-repeat center center;
+}
+
+.details {
+    flex: 1;
+    color: #b64d14;
+    padding: 20px; /* Balanced inner padding */
+    text-align: left;
+}
+
+.details p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.name {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px; /* Adds spacing below the name */
+}
+
+.name span {
+    color: #b64d14;
+}
+
+.text-2 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.text-2 span {
+    font-size: 27px;
+    font-weight: 500;
+    color: #b64d14;
+}
+
+/* Button */
+.btn-1 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #b64d14;
+    color: #fff;
+    padding: 12px 30px; 
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 25px; 
+    border: 2px solid #b64d14;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+    color: #b64d14;
+    background: none;
+}
+
+/* Image Section */
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+.image img {
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: auto;
+    border-radius: 16px; /* Adds subtle rounding */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px;
+    }
+
+    .details {
+        text-align: center;
+    }
+
+    .btn-1 {
+        width: 100%; /* Full-width button for small screens */
+    }
+}
+
+/* ABOUT SECTION */
+.image img {
+    width: 100%; /* Ensures image adapts to the container */
+    max-width: 400px; /* Sets a maximum width for better scaling */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers the image */
+    display: block; /* Centers the image horizontally */
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    align-items: flex-start;
+    justify-content: space-between; /* Adds space between image and content */
+    padding: 60px 40px; /* Balanced padding for all sides */
+    gap: 40px; /* Adds space between flex items */
+    background: url("https://i.ibb.co/SPZD6fx/banner.jpg") no-repeat center center; /* Adds background image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    border-radius: 16px; /* Adds smooth corners */
+    color: #ffffff; /* Ensures text is readable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for premium look */
+}
+
+.myimage {
+    margin: 0 auto; /* Centers the image in smaller screens */
+    width: 300px; /* Sets a consistent width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.image-of-mine{
+    padding-bottom: 79px;
+}
+
+.about {
+    flex: 1;
+    padding: 20px 40px; /* Inner padding for content */
+    color: #ffffff; /* Ensures readability on dark background */
+}
+
+.about h2 {
+    color: #f4a261; /* Highlight color for headings */
+    font-size: 32px;
+    margin-bottom: 10px; /* Adds spacing below heading */
+}
+
+.about h1 {
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #d5c1c1;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 700px; /* Restricts line width for readability */
+}
+
+.basicinfo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Makes it responsive */
+    gap: 20px; /* Adds space between info items */
+    margin-top: 20px; /* Adds spacing above */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between label and value */
+    padding: 10px 15px; /* Padding inside each item */
+    background-color: #2e2e2e; /* Subtle background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.label {
+    font-weight: bold;
+    color: #f4a261; /* Highlight color for labels */
+}
+
+.separator {
+    color: #ffffff;
+}
+
+.value {
+    color: #ffffff;
+}
+
+.download-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.download-btn a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #b64d14;
+    color: #fff;
+    padding: 12px 30px; 
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 25px; 
+    border: 2px solid #b64d14;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.download-btn a:hover {
+    color: #b64d14;
+    background: none;
+}
+
+/* SKILLS SECTION */
+
+:root {
+    --primary-color: #f4a261;
+    --text-dark: #ffffff;
+    --text-light: #ffffff;
+    --bg-light: #444444; 
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 130px 40px; 
+    gap: 40px; 
+    background: url("https://i.ibb.co/SPZD6fx/banner.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 16px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+
+.skill-detail {
+    flex: 1;
+    padding: 20px 40px; /* Adds inner spacing */
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.skill-detail h1 {
+    font-size: 60px; /* Reduced font size for balance */
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 20px; /* Adds spacing below */
+}
+
+.skills-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between each skill item */
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Spacing between skill name and bar */
+}
+
+.skill-name {
+    font-size: 18px;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+.skill-percentage {
+    font-size: 16px;
+    color: var(--text-light);
+}
+
+.skill-bar {
+    position: relative;
+    width: 100%;
+    height: 12px; /* Increased height for better visibility */
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(90deg, #f4a261, #e76f51); /* Adds gradient for premium effect */
+    border-radius: 8px;
+    transition: width 1s ease-in-out;
+}
+
+/* Adjust widths for progress bars */
+.html-progress {
+    width: 85%;
+}
+
+.css-progress {
+    width: 75%;
+}
+
+.python-progress {
+    width: 70%;
+}
+
+.c-Language-progress {
+    width: 85%;
+}
+
+.java-progress {
+    width: 5%;
+}
+
+.DSA-progress {
+    width: 65%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Stacks sections vertically */
+        padding: 20px;
+    }
+
+    .skill-detail {
+        padding: 20px;
+    }
+
+    .skills-list {
+        padding: 20px;
+    }
+}
+
+/* CONTACT PAGE */
+
+.contact-page {
+    margin: px auto; /* Centers the page */
+    padding: 60px 40px; /* Balanced padding */
+    box-sizing: border-box;
+    background: url("https://i.ibb.co/SPZD6fx/banner.jpg") no-repeat center center; /* Background image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    border-radius: 16px; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds subtle shadow */
+    color: #ffffff; /* Ensures text is readable */
+}
+
+.contact-section {
+    padding: 40px 20px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px; /* Adds space between columns */
+    align-items: start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between contact items */
+}
+
+.contact-info h1 {
+    font-size: 50px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #f4a261; /* Premium highlight color */
+    margin-bottom: 20px; /* Adds spacing below */
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 15px 20px;
+    border-radius: 12px; /* Smooth corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* More prominent shadow on hover */
+}
+
+.contact-info-item i {
+    font-size: 24px;
+    color: #f4a261;
+    margin-right: 20px; /* Spacing between icon and text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent icon background */
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f4a261;
+    margin-bottom: 5px; /* Spacing below heading */
+}
+
+.contact-info-item p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 12px;
+    padding: 20px 55px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #f4a261;
+}
+
+.contact-form p {
+    color: #ffffff;
+    margin-bottom: 20px; 
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    border-radius: 8px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: border 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #f4a261; 
+    outline: none;
+}
+
+textarea.form-control {
+    height: 120px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #b64d14;
+    color: #fff;
+    padding: 12px 223px; 
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 25px; 
+    border: 2px solid #b64d14;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #b64d14;
+    background: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .btn {
+        width: auto; 
+    }
+}
+
+
+
+/*PROJECTS SECTION */
+
+
+.five-page {
+    background: url("https://i.ibb.co/SPZD6fx/banner.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #b64d14; 
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12rem;
+    margin: 0;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease;
+    margin-top: 137px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    color: #b64d14;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #ffffff;
+    margin: 0.5em 0;
+}
+
+.card-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #b64d14;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 2px solid #b64d14;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    color: #b64d14;
+    background: none;
+}
+
+
+
+
+/* From Uiverse.io by wilsondesouza */
+/* CSS FOR SOCIAL MEDIA ICONS */
+ul {
+    list-style: none;
+  }
+  
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color:#b57d5f;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"]~.tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"]~.tooltip {
+    background-color: #24262a;
+  }
+  
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"]~.tooltip {
+    background: linear-gradient(45deg,
+        #405de6,
+        #5b51db,
+        #b33ab4,
+        #c135b4,
+        #e1306c,
+        #fd1f1f);
+  }
+  
+  
+   

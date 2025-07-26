@@ -8,7 +8,7 @@ This site showcases my skills, projects, achievements, and resume, helping recru
 
 https://vercel.com/hassan-khans-projects-da449e73/final-portfolio/CBMaDgmg3S2iZF5KVSjaNrbqFfdQ
 
-📁 Sections Included
+📁 SECTIONS INCLUDED
 
 1- Home Page – Brief intro and navigation
 
